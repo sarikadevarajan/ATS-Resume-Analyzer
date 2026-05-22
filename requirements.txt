@@ -5,3 +5,4 @@ nltk==3.8.1
 google-generativeai
 python-dotenv
 scikit-learn==1.5.2
+python-dotenv
