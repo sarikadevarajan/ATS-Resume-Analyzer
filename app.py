@@ -5,6 +5,10 @@ import nltk
 import numpy as np
 import json
 import google.generativeai as genai
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 nltk.download("punkt")
 nltk.download("stopwords")
@@ -12,7 +16,7 @@ nltk.download("stopwords")
 # loading models
 clf = pickle.load(open("clf.pkl", "rb"))
 tfidfd = pickle.load(open("tfidf.pkl", "rb"))
-genai.configure(api_key="AIzaSyDhhsJ3eEYr-p44xmTs53MmNvfOW-Wv2tA")
+genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 
 def clean_resume(resume_text):
