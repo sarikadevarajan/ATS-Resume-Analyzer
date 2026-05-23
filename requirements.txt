@@ -1,8 +1,7 @@
 streamlit
 pandas
-numpy==1.26.4
-nltk==3.8.1
+numpy
+nltk
 google-generativeai
 python-dotenv
-scikit-learn==1.5.2
-python-dotenv
+scikit-learn
