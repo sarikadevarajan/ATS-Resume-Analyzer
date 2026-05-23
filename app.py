@@ -189,3 +189,16 @@ if uploaded_file is not None:
 
     if submit2:
         ats_for_jd(resume_text, jd)
+
+def get_gemini_repsonse(input):
+    st.write("Creating model")
+
+    model = genai.GenerativeModel("gemini-2.5-flash")
+
+    st.write("Sending request")
+
+    response = model.generate_content(input)
+
+    st.write("Response received")
+
+    return response.text
