@@ -21,12 +21,7 @@ tfidfd = pickle.load(open("tfidf.pkl", "rb"))
 genai.configure(
     api_key=st.secrets["GOOGLE_API_KEY"]
 )
-try:
-    model = genai.GenerativeModel("gemini-2.5-flash")
-    test = model.generate_content("Hello")
-    st.success("Gemini connection successful")
-except Exception as e:
-    st.error(f"Gemini connection failed: {e}")
+
 
 def clean_resume(resume_text):
     clean_text = re.sub("http\S+\s*", " ", resume_text)
