@@ -18,7 +18,9 @@ clf = pickle.load(open("clf.pkl", "rb"))
 tfidfd = pickle.load(open("tfidf.pkl", "rb"))
 
 st.write("Starting Gemini request...")
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+genai.configure(
+    api_key=st.secrets["GOOGLE_API_KEY"]
+)
 
 
 def clean_resume(resume_text):
