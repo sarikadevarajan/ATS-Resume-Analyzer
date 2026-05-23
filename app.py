@@ -17,7 +17,7 @@ load_dotenv()
 clf = pickle.load(open("clf.pkl", "rb"))
 tfidfd = pickle.load(open("tfidf.pkl", "rb"))
 
-st.write("Starting Gemini request...")
+
 genai.configure(
     api_key=st.secrets["GOOGLE_API_KEY"]
 )
@@ -125,9 +125,9 @@ def ats_for_jd(text, jd):
     }}
     """
 
-    st.write("Starting Gemini request...")
+   
     output = get_gemini_repsonse(input_prompt)
-    st.write("Ending Gemini request...")
+    
     print("GEMINI OUTPUT:")
     print(output)
     try:
