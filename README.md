@@ -30,7 +30,7 @@ The Resume Application Tracking System (ATS) is designed to streamline the recru
  Dataset :https://www.kaggle.com/datasets/gauravduttakiit/resume-dataset
 ## Demo
 
-- [**Demo Link**](https://resumeapplicationtrackingsystem-karthikeya.streamlit.app/)
+- [**Demo Link**](https://ats-resume-analyzer-azf8ebeqepwcw8nuk8aj2g.streamlit.app/)
 
 
 
