@@ -117,7 +117,10 @@ def ats_for_jd(text, jd):
         "Profile Summary":"summary"
     }}
     """
+
+    st.write("Starting Gemini request...")
     output = get_gemini_repsonse(input_prompt)
+    st.write("Ending Gemini request...")
     print("GEMINI OUTPUT:")
     print(output)
     try:
