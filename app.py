@@ -10,8 +10,8 @@ import os
 
 load_dotenv()
 
-nltk.download("punkt")
-nltk.download("stopwords")
+#nltk.download("punkt")
+#nltk.download("stopwords")
 
 # loading models
 clf = pickle.load(open("clf.pkl", "rb"))
